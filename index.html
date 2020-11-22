@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stlye.css">
+    <script src="life.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+</head>
+<body>
+ <div class="container-fluid p-0">
+<header>
+
+ <div class="container col-md-12 col-sm-12">
+  <nav class="scroll-top navbar navbar-expand-lg">
+  <a class="navbar-brand" href="#">BREED</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span> <i class="fas fa-bars text-light"></i></span>
+
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="mr-auto"></div>
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">HOME
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">SERVICE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">TEAM</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">REVIEW</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">ABOUT</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+
+
+</header>
+
+<main>
+      
+        <div class="col-md-12 col-sm-12">
+          <p>Be a Part of the Movement, 
+            <span>Register through the link</span>
+            </p>
+            <a onclick="changeStyling()"  class="btn-success btn-lg" href="#">JOIN US</a>
+         
+        </div>
+  
+    
+    
+</main>
+
+ <form name="myform" onsubmit="return validate()">
+      <h3 class="">Sign Up</h3>
+<fieldset class="col-md-12 col-sm-12">
+<legend> <span class="number">1</span> Your basic info</legend>
+<label for="name">Name:</label>
+<br>
+<input type="text" name="username"  required>
+<br>
+<label for="email">Email:</label>
+<br>
+<input type="email" name="mail" required>
+<br>
+<label for="password">Password:</label>
+<br>
+<input type="password" name="p-word" id="pword" required>
+<label id="pError" style="color: red; visibility: hidden;">password not strong</label>
+<br>
+<label for="phonenumber">Phone number:</label>
+<br>
+<input type="tel" name="number" id="pnumber" required>
+<br>
+<label for="age">Age:</label>
+<br>
+<input type="radio" name="age" id="" required> <span>11-18</span> 
+<br>
+<input type="radio" name="age" id="" required> <span>19-25</span> 
+
+<legend> <span class="number">2</span> Your Profile</legend>
+<label for="bio">Biography:</label>
+<br>
+<textarea name="bio" id=""></textarea>
+<br>
+<label for="role">Job Role:</label>
+<br>
+<select name="position" id="" required>
+  <optgroup label="Web">
+  <option value="Front-End Developer">Front-End Developer</option>
+  <option value="Back-End Developer">Back-End Developer</option>
+  <option value="PHP Developer">PHP Developer</option>
+</optgroup>
+<optgroup label="mobile">
+  <option value="ios">ios Developer</option>
+  <option value="Back-End Developer">Android Developer</option>
+  <option value="PHP Developer">Mobile Designer</option>
+</optgroup>
+</select>
+<br>
+<label for="interest">Interests:</label>
+<br>
+<input type="checkbox" name="interest" id=""><label>Development</label>
+<br>
+<input type="checkbox" name="interest" id=""><label>Design</label>
+<br>
+<input type="checkbox" name="interest" id=""><label>Business</label>
+<br>
+</fieldset>
+<button  class="btn-success" type="submit">Sign Up</button>
+
+    </form>
+
+<footer>
+<div class="container-fluid">
+
+    <div class="col-md-12 col-sm-12">
+<div class="row p-1">
+ 
+ <div class="col-md-6 col-sm-12">
+  <div class="row">
+    <div class="col-md-4 col-sm-4">
+      <h4>MENU</h4>
+      <ul>
+        <li><h6>TRAVEL</h6></li>
+        <li><h6>NATURE</h6></li>
+        <li><h6>EXPLORES</h6></li>
+        <li><h6>SCIENCE</h6></li>
+        <li><h6>ADVICE</h6></li>
+      </ul>
+    </div>
+    <div class="col-md-4 col-sm-4">
+      <h4></h4>
+      <ul>
+        <li><p>About Us</p></li>
+        <li><p>Contacts</p></li>
+        <li><p>Terms & Condition</p></li>
+        <li><p>Privacy Policy</p></li>
+      </ul>
+    </div>
+    <div class="col-md-4 col-sm-4">
+      <h4>Follow Us</h4>
+      <ul>
+        <li><p>Facebook <i class="fab fa-facebook"></i></p></li>
+        <li><p>Twitter <i class="fab fa-twitter"></i></p></li>
+        <li><p>Instagram <i class="fab fa-instagram"></i></p></li>
+        <li><p>Youtube <i class="fab fa-youtube"></i></p></li>
+      </ul>
+    </div>
+  </div>
+ </div>
+  <div class="col-md-3 col-sm-6">
+
+    <h4>NEWSLETTER</h4>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+       Itaque temporibus commodi nemo voluptatem voluptatum possimus?</p>
+       <input type="search" name="" id="" placeholder="Search for" <i class="far fa-envelope"></i >
+
+</div>
+
+<div class="col-md-3 col-sm-6">
+  <h4>LOGO</h4>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium et est placeat fugiat minima! Iusto in quae id tempore iure, nihil excepturi eos iste cupiditate, 
+    amet natus reprehenderit nostrum a? Hic nemo asperiores maiores fuga excepturi inventore quis temporibus esse?</p>
+    <p>&copy;2020 MSD UI, All Rights Reseved</p>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+</footer>
+
+ </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous"></script>
+</body>
+</html>
